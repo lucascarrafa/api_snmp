@@ -10,13 +10,21 @@ mostraStatus = function(valor){
         }
 }
 
+verificaValor = function(valor){
+	if(Number.isInteger(valor)){
+		return mostraStatus(valor);
+	}else{
+		return valor;
+	}
+}
+
 guardaDados = function(valor){
-	const aux =[];
+	const dadosSwitch =[];
 	valor.forEach(async (vb)=>{
-		aux.push({"iod":vb.oid.toString(),"value":vb.value,"type":vb.type})
+		dadosSwitch.push({"iod":vb.oid.toString(),"value":verificaValor(vb.value),"type":vb.type})
 		await Switch.create({iod:vb.oid.toString(),value:vb.value,type:vb.type}); 
 	});
-	return aux;
+	return dadosSwitch;
 }
 
 
@@ -32,7 +40,7 @@ module.exports = {
             if (error) {
                 return res.json({mensagem:"Ops, algo de errado"});
             } else {
-                return res.json({iod: varbinds[0].oid, equipamento: varbinds[0].value});        
+                return res.json({iod: varbinds[0].oid.toString(), equipamento: varbinds[0].value});        
             }
         });
     },
@@ -41,7 +49,7 @@ module.exports = {
             if (error) {
                 return res.json({mensagem:"Ops, algo de errado"});
             } else {
-                return res.json({iod:varbinds[0].oid, status: mostraStatus(varbinds[0].value)});
+                return res.json({iod:varbinds[0].oid.toString(), status: mostraStatus(varbinds[0].value)});
             }
         });
     },    async porta02(req, res){
@@ -49,7 +57,7 @@ module.exports = {
             if (error) {
                 return res.json({mensagem:"Ops, algo de errado"});
             } else {
-                return res.json({iod:varbinds[0].oid, status: mostraStatus(varbinds[0].value)});
+                return res.json({iod:varbinds[0].oid.toString(), status: mostraStatus(varbinds[0].value)});
             }
         });
     }
