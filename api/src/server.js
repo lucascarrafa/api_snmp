@@ -7,4 +7,4 @@ server.use(express.json())
 
 server.use(routes) //add modulo
 
-server.listen(3333) //define a porta
+server.listen(5000) //define a porta
