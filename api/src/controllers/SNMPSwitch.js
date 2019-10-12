@@ -22,7 +22,7 @@ guardaDados = function(valor){
 	const dadosSwitch =[];
 	valor.forEach(async (vb)=>{
 		dadosSwitch.push({"iod":vb.oid.toString(),"value":verificaValor(vb.value),"type":vb.type})
-		await Switch.create({iod:vb.oid.toString(),value:vb.value,type:vb.type}); 
+		await Switch.create({iod:vb.oid.toString(),value:verificaValor(vb.value),type:vb.type}); 
 	});
 	return dadosSwitch;
 }
