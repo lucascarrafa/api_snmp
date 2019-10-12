@@ -2,9 +2,9 @@ const express = require('express')
 
 const routes = express.Router()
 
-routes.get('/', (req,res) => {
-    return res.json({message:`Hello ${req.query.name}`})
-})
+const SNMPSwitch = require('./controllers/SNMPSwitch')
+
+routes.get('/nome',SNMPSwitch.nome)
 
 module.exports = routes
 
