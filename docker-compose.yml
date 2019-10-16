@@ -19,7 +19,7 @@ services:
       - mongo
 
   app:
-    image: lucascarrafa/server_snmp:1.0
+    image: lucascarrafa/server_snmp:1.2
     links:
       - mongo
     ports:
