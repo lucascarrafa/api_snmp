@@ -4,6 +4,7 @@
 Na versão o container lucascarrafa/server_snmp retorna apenas variáveis como *estado e nome*
 
 A consulta "http://<ip-do-servidor>:5000/” retorna todos dados do dispositivo armazenados no banco de dados
+
 **Retorno**
 
 ```
@@ -39,6 +40,7 @@ A consulta "http://<ip-do-servidor>:5000/” retorna todos dados do dispositivo 
 ```
 
 A consulta “http://<ip-do-servidor>:5000/porta01 retorna e armazena o estado da porta 01 do switch
+
 **Retorno**
 
 ```
@@ -48,6 +50,7 @@ A consulta “http://<ip-do-servidor>:5000/porta01 retorna e armazena o estado d
 ```
 
 A consulta “http://<ip-do-servidor>:5000/porta02 retorna e armazena o estado da porta 02 do switch
+
 **Retorno**
 
 ```
@@ -57,6 +60,7 @@ A consulta “http://<ip-do-servidor>:5000/porta02 retorna e armazena o estado d
 ```
 
 A consulta “http://<ip-do-servidor>:5000/nome retorna e armazena o nome do switch
+
 **Retorno**
 
 ```
@@ -67,6 +71,7 @@ A consulta “http://<ip-do-servidor>:5000/nome retorna e armazena o nome do swi
 ```
 
 A consulta “http://<ip-do-servidor>:5000/inserir armazena um novo oid (porta,nome,...) no banco de dados
+
 **Exemplo de inserção de dados usando JSON**
 
 ```
@@ -78,6 +83,7 @@ A consulta “http://<ip-do-servidor>:5000/inserir armazena um novo oid (porta,n
 ```
 
 A consulta “http://<ip-do-servidor>:5000/atualizar atualiza um registro no banco de dados
+
 **Exemplo de atualização de dados usando JSON**
 
 ```
@@ -89,6 +95,7 @@ A consulta “http://<ip-do-servidor>:5000/atualizar atualiza um registro no ban
 ```
 
 A consulta “http://<ip-do-servidor>:5000/deletar excluir um oid no banco de dados
+
 **Exemplo de exclusão de dados usando JSON**
 
 ```
@@ -101,6 +108,7 @@ A consulta “http://<ip-do-servidor>:5000/deletar excluir um oid no banco de da
 Na versão o container lucascarrafa/server_snmp retorna todas as variáveis registradas no banco de dados mongodb
 
 A consulta "http://<ip-do-servidor>:5000/” retorna todos dados do dispositivo armazenados no banco de dados
+
 **Retorno**
 
 ```
@@ -136,6 +144,7 @@ A consulta "http://<ip-do-servidor>:5000/” retorna todos dados do dispositivo 
 ```
 
 A consulta “http://<ip-do-servidor>:5000/porta01 retorna e armazena o estado da porta 01 do switch
+
 **Retorno**
 
 ```
@@ -151,6 +160,7 @@ A consulta “http://<ip-do-servidor>:5000/porta01 retorna e armazena o estado d
 ```
 
 A consulta “http://<ip-do-servidor>:5000/porta02 retorna e armazena o estado da porta 02 do switch
+
 **Retorno**
 
 ```
@@ -166,6 +176,7 @@ A consulta “http://<ip-do-servidor>:5000/porta02 retorna e armazena o estado d
 ```
 
 A consulta “http://<ip-do-servidor>:5000/nome retorna e armazena o nome do switch
+
 **Retorno**
 
 ```
@@ -181,6 +192,7 @@ A consulta “http://<ip-do-servidor>:5000/nome retorna e armazena o nome do swi
 ```
 
 A consulta “http://<ip-do-servidor>:5000/inserir armazena um novo oid (porta,nome,...) no banco de dados
+
 **Exemplo de inserção de dados usando JSON**
 
 ```
@@ -192,6 +204,7 @@ A consulta “http://<ip-do-servidor>:5000/inserir armazena um novo oid (porta,n
 ```
 
 A consulta “http://<ip-do-servidor>:5000/atualizar atualiza um registro no banco de dados
+
 **Exemplo de atualização de dados usando JSON**
 
 ```
@@ -203,6 +216,7 @@ A consulta “http://<ip-do-servidor>:5000/atualizar atualiza um registro no ban
 ```
 
 A consulta “http://<ip-do-servidor>:5000/deletar excluir um oid no banco de dados
+
 **Exemplo de exclusão de dados usando JSON**
 
 ```
