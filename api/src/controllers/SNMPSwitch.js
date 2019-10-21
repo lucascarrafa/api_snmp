@@ -1,6 +1,6 @@
 const Switch = require('../model/Switch')
 var snmp = require('snmp-native'); //biblioteca SNMP mais recente da comunidade
-var session = new snmp.Session({ host: '200.137.87.181', port: 161, community: 'd3s4f10' });
+var session = new snmp.Session({ host: '203.0.113.1', port: 161, community: 'd3s4f10' });
 
 mostraStatus = function(valor){ //funcao responsavel por converter o value(1)/(2) no estado desejado
         if(valor==1){
